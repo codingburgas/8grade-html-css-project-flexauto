@@ -1,0 +1,90 @@
+/* Общи стилове */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Хедър */
+  header {
+    background-color: #1c1c1c;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+  }
+  
+  /* Лого */
+  .logo-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  
+  .logo {
+    height: 50px;
+  }
+  
+  /* Основно заглавие */
+  header h1 {
+    margin-top: 10px;
+    font-size: 28px;
+  }
+  
+  /* Навигация */
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    background-color: #4CAF50;
+    padding: 10px 16px;
+    border-radius: 6px;
+    transition: background 0.3s;
+  }
+  
+  nav ul li a:hover {
+    background-color: #45a049;
+  }
+  
+  /* Главна секция */
+  main {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  main h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  main p {
+    font-size: 18px;
+  }
+  
+  /* Футър */
+  footer {
+    background-color: #1c1c1c;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
