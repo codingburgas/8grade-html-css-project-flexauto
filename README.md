@@ -1,4 +1,4 @@
-![Лого на Flex-Auto](https://github.com/codingburgas/8grade-html-css-project-flexauto/blob/main/images/Image%20(2).png)
+![Лого на Flex-Auto](https://github.com/codingburgas/8grade-html-css-project-flexauto/blob/main/images/9026B910-0E90-4327-85D9-7EA27659B853%20(1).png)
 
 
 
