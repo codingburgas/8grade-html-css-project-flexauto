@@ -1,51 +1,39 @@
 <!DOCTYPE html>
-
+<html>
 <head>
   <meta charset="UTF-8">
   <title>Flex-Auto</title>
   <link rel="stylesheet" href="../Styles/indexcss.css">
 </head>
 <body>
+  <div class="background-overlay">
+    <div class="dark-overlay"></div>
+  </div>
+  
   <header>
     <div class="logo-container">
-        <a href="index.html">
-          <img src="../images/9026B910-0E90-4327-85D9-7EA27659B853 (1).png" alt="Лого на Rent-a-Car" class="logo" >
-        </a>
-      </div>
-      <nav>
-        <ul>
-         
-          
-        </ul>
-      </nav>
-    
-      <h1>Welcome to Flex-Auto!</h1>
-
+      <a href="index.html">
+        <img src="../images/9026B910-0E90-4327-85D9-7EA27659B853 (1).png" alt="Flex-Auto Logo" class="logo">
+      </a>
+    </div>
     <nav>
       <ul>
-        <li><a href="index.html#index">Home</a></li> <hr>
-        <li><a href="categories.html">Categories</a></li> <hr>
-     <li><a href="#contact.html">Contact</a></li> <hr>
-     
-        <li><a href="loginpage.html">Sing in</a></li>
-        
+        <li><a href="index.html">Home</a></li>
+        <li><a href="categories.html">Categories</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="loginpage.html">Sign in</a></li>
       </ul>
     </nav>
-
-<div>
-  
-  
-</div>
-
-    
   </header>
-  <div class="booking-form">
-    <h1>Car Rental Booking</h1>
-    
-    <section id="reservation" class="section bg-light">
-      <div class="container">
-        <h2>Reserve Your Car</h2>
+
+  <main>
+    <section class="hero">
+      <h1>Welcome to Flex-Auto!</h1>
+      <div class="booking-container">
+     
+        
         <div class="booking-form">
+          <h3>Reserve Your Car</h3>
           <div class="form-group">
             <label for="pickup-location">Pick-up location</label>
             <input type="text" id="pickup-location" placeholder="Airport, city or station">
@@ -56,10 +44,9 @@
               <label for="pickup-date">Pick-up date</label>
               <input type="date" id="pickup-date">
             </div>
-            
             <div class="form-group">
               <label for="pickup-time">Time</label>
-              <input type="time" id="pickup-time" value="10:00">
+              <input type="time" id="pickup-time" value="19:00">
             </div>
           </div>
           
@@ -68,25 +55,44 @@
               <label for="dropoff-date">Drop-off date</label>
               <input type="date" id="dropoff-date">
             </div>
-            
             <div class="form-group">
               <label for="dropoff-time">Time</label>
-              <input type="time" id="dropoff-time" value="10:00">
+              <input type="time" id="dropoff-time" value="19:00">
             </div>
           </div>
-  <main>
-    <section>
-      <h2>Rent vehicle fast and easy!</h2>
-      <p>Browse our extensive collection of rental cars and choose the one that suits you best!</p>
+          <button class="search-btn" onclick="window.location.href='../Html/categories.html'">Search </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="features">
+      <h2>Experience Premium Vehicle Rentals with the Nation's Finest Fleet</h2>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <h3>Free cancellations</h3>
+          <p>Cancel or change most bookings for free up to 48 hours before pick-up</p>
+        </div>
+        <div class="feature-card">
+          <h3>No hidden fees</h3>
+          <p>Know exactly what you're paying</p>
+        </div>
+        <div class="feature-card">
+          <h3>Verified reviews</h3>
+          <p>10,000+ reviews by real customers</p>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer>
+    <section id="contact" class="section">
     <h2>Contact Us</h2>
-        <p>Email: <a href="mailto:contact@flexauto.com">contact@flexauto.com</a></p>
-        <p>Phone: +1 234 567 000</p>
-
+    <p>Email: <a href="mailto:contact@flexauto.com">contact@flexauto.com</a></p>
+    <p>Phone: +1 234 567 000</p>
+  </section>
     <p>&copy; 2025 Flex-Auto</p>
+    <h2>Legal</h2>
+    <a href="../Html/privacy.html"> privacy-policy</a>
   </footer>
 </body>
 </html>

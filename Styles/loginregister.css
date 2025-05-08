@@ -1,130 +1,224 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+:root {
+  --primary: #0066cc;
+  --secondary: #ffcc00;
+  --dark: #222;
+  --light: #f8f9fa;
+  --white: #fff;
+  --gray: #f5f5f5;
+}
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Segoe UI', Roboto, sans-serif;
 }
 
 body {
-  font-family: 'Inter', sans-serif;
-  background-color: #f4f4f4;
-  color: #2c2c2c;
+  position: relative;
+  min-height: 100vh;
+  color: var(--dark);
   line-height: 1.6;
-  font-size: 16px;
+  background-color: var(--light);
 }
 
 header {
-  background-color: #1c1c1c;
-  color: white;
-  padding: 20px 0;
-  text-align: center;
-  position: relative;
-}
-
-.logo-container {
-  position: absolute;
-  top: 20px;
-  left: 20px;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
 .logo {
-  height: 50px;
-}
-
-header h1 {
-  margin-top: 10px;
-  font-size: 28px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary);
+  text-decoration: none;
 }
 
 nav ul {
-  list-style: none;
-  padding: 0;
-  margin-top: 20px;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 15px;
+  list-style: none;
+  gap: 1.5rem;
 }
 
-nav ul li a {
-  color: white;
+nav a {
+  color: var(--dark);
   text-decoration: none;
-  background-color: #b8ab00;
-  padding: 10px 18px;
-  border-radius: 8px;
-  font-weight: 600;
-  transition: background-color 0.3s ease;
+  font-weight: 500;
+  padding: 0.5rem 0;
+  position: relative;
+  transition: color 0.3s;
 }
 
-nav ul li a:hover {
-  background-color: #d1c900;
+nav a:hover {
+  color: var(--primary);
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--primary);
+  transition: width 0.3s;
+}
+
+nav a:hover::after {
+  width: 100%;
 }
 
 main {
-  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 200px);
+  padding: 2rem;
+}
+
+.login-section {
+  background: var(--white);
+  padding: 2.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 500px;
+  margin: 2rem 0;
+}
+
+.login-section h1 {
   text-align: center;
+  margin-bottom: 1.5rem;
+  color: var(--dark);
 }
 
-main h1 {
-  font-size: 28px;
-  margin-bottom: 20px;
-  color: #1a1a1a;
+.login-section h1 span {
+  color: var(--primary);
 }
 
-main label {
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+label {
   display: block;
-  margin: 12px 0 6px;
-  font-weight: 600;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: var(--dark);
 }
-input[type="tel"],
+
 input[type="text"],
 input[type="email"],
-input[type="password"] {
-  padding: 10px;
-  width: 250px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 14px;
+input[type="password"],
+input[type="tel"] {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--gray);
+  border-radius: 4px;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+input:focus {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
 }
 
 .button-primary {
-  margin-top: 16px;
-  padding: 10px 20px;
-  background-color: #b8ab00;
-  color: white;
+  padding: 0.75rem;
+  background-color: var(--primary);
+  color: var(--white);
   border: none;
-  border-radius: 6px;
+  border-radius: 4px;
+  font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s;
+  margin-top: 1rem;
 }
 
 .button-primary:hover {
-  background-color: #a89d00;
+  background-color: #0052a3;
 }
 
-main p {
-  margin-top: 20px;
-  font-size: 14px;
+.login-section p {
+  text-align: center;
+  margin-top: 1.5rem;
 }
 
-main a {
-  color: #4b00ae;
+.login-section a {
+  color: var(--primary);
   text-decoration: none;
+  transition: color 0.3s;
 }
 
-main a:hover {
+.login-section a:hover {
+  color: #004080;
   text-decoration: underline;
 }
 
 footer {
-  background-color: #1c1c1c;
-  color: white;
+  background: var(--dark);
+  color: var(--white);
   text-align: center;
-  padding: 15px 0;
-  position: fixed;
-  bottom: 0;
+  padding: 1.5rem;
+  position: relative;
+  bottom: -60px;
   width: 100%;
-  font-size: 14px;
+}
+
+footer a {
+  color: var(--secondary);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: #e6b800;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .login-section {
+    padding: 1.5rem;
+  }
+}
+
+.logo {
+  height: 60px;
+}
+.background-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://estavisa.com.ar/wp-content/uploads/2019/12/road-trip-turismo.jpg') center/cover no-repeat;
+  z-index: -1;
+}
+
+.dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
 }

@@ -3,46 +3,60 @@
   --secondary: #ffcc00;
   --dark: #222;
   --light: #f8f9fa;
-  --text: #333;
   --white: #fff;
-  --header-bg: linear-gradient(to right, #fff9c4, #ffffff);
+  --gray: #f5f5f5;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Segoe UI', Roboto, sans-serif;
 }
 
 body {
-  font-family: 'Segoe UI', Roboto, sans-serif;
-  line-height: 1.6;
-  color: var(--text);
-  background: var(--light);
+  position: relative;
   min-height: 100vh;
+  color: var(--dark);
+  line-height: 1.6;
+}
+
+.background-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://estavisa.com.ar/wp-content/uploads/2019/12/road-trip-turismo.jpg') center/cover no-repeat;
+  z-index: -1;
+}
+
+.dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 header {
-  background: var(--header-bg);
+  background: rgba(255, 255, 255, 0.9);
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
 .logo {
-  height: 100px;
-  transition: transform 0.2s ease;
-}
-
-.logo:hover {
-  transform: scale(1.05);
+  height: 60px;
 }
 
 nav ul {
   display: flex;
   list-style: none;
-  gap: 1.5rem;
+  gap: 2rem;
 }
 
 nav a {
@@ -57,50 +71,35 @@ nav a:hover {
   color: var(--primary);
 }
 
-nav a:after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background: var(--primary);
-  transition: width 0.3s ease;
-}
-
-nav a:hover:after {
-  width: 100%;
-}
-
-h1, h2 {
-  color: var(--dark);
-  font-weight: 600;
-  margin: 1.5rem 0;
-}
-
-h1 {
-  font-size: 2.5rem;
+.hero {
   text-align: center;
+  padding: 4rem 2rem;
+  color: var(--white);
 }
 
-h2 {
-  font-size: 1.8rem;
-  border-bottom: 2px solid var(--primary);
-  display: inline-block;
-  padding-bottom: 0.5rem;
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
 }
 
-main {
-  padding: 2rem;
-  max-width: 1200px;
+.booking-container {
+  max-width: 800px;
   margin: 0 auto;
-}
-
-.booking-form {
-  background: var(--white);
+  background: rgba(255, 255, 255, 0.9);
   padding: 2rem;
   border-radius: 8px;
-  margin: 2rem 0;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+.booking-form h2, .booking-form h3 {
+  color: var(--dark);
+  margin-bottom: 1.5rem;
+}
+
+.booking-form h2 {
+  font-size: 1.8rem;
+  text-align: center;
 }
 
 .form-group {
@@ -110,15 +109,21 @@ main {
 .form-row {
   display: flex;
   gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.form-row .form-group {
+  flex: 1;
 }
 
 label {
   display: block;
   margin-bottom: 0.5rem;
   font-weight: 500;
+  color: var(--dark);
 }
 
-input, select {
+input {
   width: 100%;
   padding: 0.75rem;
   border: 1px solid #ddd;
@@ -126,54 +131,73 @@ input, select {
   font-size: 1rem;
 }
 
-button {
+.search-btn {
   background: var(--primary);
-  color: var(--white);
+  color: white;
   border: none;
-  padding: 1rem;
+  padding: 1rem 2rem;
   font-size: 1rem;
   border-radius: 4px;
   cursor: pointer;
-  transition: background 0.2s ease;
+  width: 100%;
+  font-weight: 600;
+  margin-top: 1rem;
+  transition: background 0.3s;
 }
 
-button:hover {
+.search-btn:hover {
   background: #0052a3;
 }
 
-footer {
-  background: transparent;
-  color: var(--dark);
+.features {
+  padding: 4rem 2rem;
+  background: var(--white);
   text-align: center;
-  padding: 2rem 0;
-  margin-top: 3rem;
-  border-top: 1px solid rgba(0,0,0,0.1);
 }
 
-.footer-content {
+.features h2 {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 2rem;
+}
+
+.feature-card {
+  background: var(--gray);
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.feature-card h3 {
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+footer {
+  background: var(--dark);
+  color: var(--white);
+  text-align: center;
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+footer a {
+  color: var(--secondary);
 }
 
 @media (max-width: 768px) {
-  header {
+  .form-row {
     flex-direction: column;
-    padding: 1rem;
-  }
-  
-  .logo {
-    height: 80px;
   }
   
   nav ul {
-    margin-top: 1rem;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .form-row {
-    flex-direction: column;
-    gap: 0;
+    gap: 1rem;
   }
 }
