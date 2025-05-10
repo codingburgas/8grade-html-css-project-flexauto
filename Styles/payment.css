@@ -1,0 +1,208 @@
+/* payment.css - Secure Payment Page Styles */
+
+.payment-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 200px);
+    padding: 2rem;
+}
+
+.payment-container {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 900px;
+    overflow: hidden;
+}
+
+.payment-header {
+    background: var(--dark);
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    position: relative;
+}
+
+.payment-header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.trust-badge {
+    background: rgba(255,255,255,0.2);
+    padding: 8px 15px;
+    border-radius: 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 15px;
+    font-size: 0.9rem;
+}
+
+.payment-content {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.payment-guarantee {
+    background: var(--light);
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.payment-guarantee h2 {
+    color: var(--primary);
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.3rem;
+}
+
+.payment-guarantee ul {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0 0 0;
+}
+
+.payment-guarantee li {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    line-height: 1.5;
+}
+
+.payment-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.payment-form h2 {
+    margin-top: 0;
+    color: var(--dark);
+    font-size: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1.2rem;
+}
+
+.form-row {
+    display: flex;
+    gap: 1rem;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: var(--dark);
+}
+
+input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.card-input {
+    position: relative;
+}
+
+.card-icons {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    gap: 8px;
+    color: #666;
+}
+
+.payment-button {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 1rem;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+   
+}
+
+.payment-button:hover {
+    background: #0052a3;
+}
+
+.secure-note {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.85rem;
+    color: #666;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+/*For mobile devices*/
+@media (max-width: 768px) {
+    .payment-content {
+        grid-template-columns: 1fr;
+        padding: 1.5rem;
+    }
+    
+    .payment-header h1 {
+        font-size: 1.5rem;
+    }
+}
+/* Payment Help Box Styles */
+.payment-help-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin:24px 0;
+    padding: 10px;
+    background-color: #fff8e1;
+box-shadow: #666;
+    border-radius: 4px;
+}
+
+.payment-help-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.payment-help-box i {
+    color: var(--secondary);
+    font-size: 1.8rem;
+}
+
+.payment-help-box p {
+    margin: 0;
+    color: var(--dark);
+    line-height: 1.5;
+    font-size: 0.95rem;
+}
