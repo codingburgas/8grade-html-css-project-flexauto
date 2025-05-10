@@ -17,23 +17,21 @@
             </a>
           </div>
         <nav>
-            <ul>
-                <li><a href="../Html/index.html">Home</a></li>
-             
-                <li><a href="../Html/categories.html">Categories</a></li>
-                
-                
-                <li><a href="../Html/team.html">Our Team</a></li>
-                <li><a href="#">Contact</a></li>
-            
-                
-            </ul>
+          <ul>
+        <li><a href="../Html/index.html">Home</a></li>
+        <li><a href="../Html/categories.html">Categories</a></li>
+        <li><a href="../Html/team.html">Our Team</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="../Html/loginpage.html">Sign in</a></li>
+        
+        <li><a href="../Html/Support.html">Support</a></li>
+      </ul>
         </nav>
     </header>
 
     <main>
         <section class="login-section">
-            <h1>Register to <span>Flex-Auto</span></h1>
+            <h1>Sing up to <span>Flex-Auto</span></h1>
             <form action="/submit_form" method="post">
                 <label for="fname">First Name:</label>
                 <input type="text" id="fname" name="firstname" placeholder="Enter your first name" required><br>
@@ -57,22 +55,29 @@
                 <input type="tel" id="tel" name="tel" placeholder="Enter your phone number" pattern="\d+" required><br>
     
                 <button type="button" class="button-primary" onclick="window.location.href='../Html/index.html'">
-                    Register
+                    Sing up
                   </button><br>
             </form>
-            <p>Have an account already? <a href="../Html/loginpage.html">Login here.</a></p>
+            <p>Have an account already? <a href="../Html/loginpage.html">Sing in here.</a></p>
             <p><a href="../Html/index.html">← Back to Home</a></p>
         </section>
     </main>
 
     <footer>
-        <section id="contact" class="section">
-            <h2>Contact Us</h2>
-            <p>Email: <a href="mailto:contact@flexauto.com">contact@flexauto.com</a></p>
-            <p>Phone: +1 234 567 000</p>
-          </section>
-        <p>© 2025 Flex-Auto. All rights reserved. | <a href="privacy.html">Privacy Policy</a></p>
-    </footer>
+    <section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:contact@flexauto.com">contact@flexauto.com</a></p> 
+    <p>Phone: +1 234 567 000</p>
+  </section> <br>
+  <section id="Support" class="section">
+  <h4>If you have any trouble, go to <a href="../Html/Support.html">Support</a></h4>
+  </section>  
+   <br> 
+    <h2>Legal</h2>
+    <a href="../Html/privacy.html"> privacy-policy</a>
+    
+<p>&copy; 2025 Flex-Auto</p>  
+</footer>
 
 </body>
 </html>

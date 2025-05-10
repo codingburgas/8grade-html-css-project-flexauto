@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login | Flex-Auto</title>
+    <title>Sing in | Flex-Auto</title>
     <link rel="stylesheet" href="../Styles/loginregister.css">
 
 
@@ -20,20 +20,20 @@
           </div>
         <nav>
             <ul>
-                <li><a href="../Html/index.html">Home</a></li>
-         
-                <li><a href="../Html/categories.html">Categories</a></li>
-               
-                <li><a href="../Html/team.html">Our Team</a></li>
-                <li><a href="#">Contact</a></li>
-               
-            </ul>
+        <li><a href="../Html/index.html">Home</a></li>
+        <li><a href="../Html/categories.html">Categories</a></li>
+        <li><a href="../Html/team.html">Our Team</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="../Html/loginpage.html">Sign in</a></li>
+        
+        <li><a href="../Html/Support.html">Support</a></li>
+      </ul>
         </nav>
     </header>
 
     <main>
         <section class="login-section">
-            <h1>Login to <span>Flex-Auto</span></h1>
+            <h1>Sing in to <span>Flex-Auto</span></h1>
            
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" placeholder="Enter your email" required="email"><br>
@@ -42,17 +42,28 @@
                 <input type="password" id="password" name="password" placeholder="Enter a password" required><br>
                
                 <button type="button" class="button-primary" onclick="window.location.href='../Html/index.html'">
-                    Login
+                    Sing in
                   </button>
             </form>
-            <p>Don't have an account? <a href="../Html/register.html">Register here.</a></p>
+            <p>Don't have an account? <a href="../Html/register.html">Sing up.</a></p>
             <p><a href="../Html/index.html">← Back to Home</a></p>
         </section>
     </main>
 
     <footer>
-        <p>© 2025 Flex-Auto. All rights reserved. | <a href="privacy.html">Privacy Policy</a></p>
-    </footer>
-
+    <section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:contact@flexauto.com">contact@flexauto.com</a></p> 
+    <p>Phone: +1 234 567 000</p>
+  </section> <br>
+  <section id="Support" class="section">
+  <h4>If you have any trouble, go to <a href="../Html/Support.html">Support</a></h4>
+  </section>  
+   <br> 
+    <h2>Legal</h2>
+    <a href="../Html/privacy.html"> privacy-policy</a>
+    
+<p>&copy; 2025 Flex-Auto</p>  
+</footer>
 </body>
 </html>

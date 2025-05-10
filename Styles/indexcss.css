@@ -156,7 +156,7 @@ input {
   width: 100%;
   font-weight: 600;
   margin-top: 1rem;
-  transition: background 0.3s;
+
 }
 
 .search-btn:hover {
@@ -164,9 +164,15 @@ input {
 }
 
 .features {
-  padding: 4rem 2rem;
-  background: var(--white);
   text-align: center;
+  align-items: center;
+  max-width: 1500px;
+  margin: 0 auto;
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+background-color: rgba(255, 255, 255, 0.9);
 }
 
 .features h2 {
@@ -206,6 +212,8 @@ footer a {
   color: var(--secondary);
 }
 
+
+
 @media (max-width: 768px) {
   .form-row {
     flex-direction: column;
@@ -213,5 +221,116 @@ footer a {
   
   nav ul {
     gap: 1rem;
+  }
+}
+
+
+.feature-card.payment-methods {
+  width: 100%;
+  max-width: 1400px; 
+  margin: 0 auto;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.feature-card.payment-methods h3 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--primary, #0066cc);
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.payment-content {
+  width: 100%;
+}
+
+.payment-content p {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.payment-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px; 
+  margin: 1.5rem 0;
+  justify-content: center;
+}
+
+.payment-icons i {
+  font-size: 2.5rem; 
+  color: #555;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.payment-icons i:hover {
+  transform: scale(1.2);
+  color: #0066cc;
+}
+
+.security-badge {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin: 2rem 0;
+  width: 100%;
+  border-left: 4px solid #2ecc71;
+}
+
+.security-badge i.fa-lock {
+  font-size: 2.2rem;
+  color: #2ecc71;
+  margin-top: 5px;
+}
+
+.security-badge strong {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.security-badge p {
+  margin-bottom: 0.5rem;
+}
+
+.security-details {
+  font-size: 1rem;
+  margin-top: 0.8rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+
+@media (max-width: 992px) {
+  .feature-card.payment-methods {
+    padding: 1.5rem;
+    max-width: 95%;
+  }
+}
+
+@media (max-width: 768px) {
+  .payment-icons {
+    gap: 15px;
+  }
+  
+  .payment-icons i {
+    font-size: 2rem;
+  }
+  
+  .security-badge {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.2rem;
+  }
+  
+  .security-badge i.fa-lock {
+    margin-bottom: 10px;
   }
 }
