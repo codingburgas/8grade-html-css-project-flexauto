@@ -1,0 +1,228 @@
+/* message-sent.css - Confirmation Page Styles */
+
+/* Main Confirmation Container */
+
+/* message-sent.css - Confirmation Page Styles */
+
+/* Main Confirmation Container */
+.confirmation-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 200px);
+    padding: 2rem;
+}
+
+.confirmation-container {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 600px;
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+/* Confirmation Icon */
+.confirmation-icon {
+    font-size: 4rem;
+    color: #2ecc71;
+    margin-bottom: 1.5rem;
+    animation: bounce 1s ease;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+    40% {transform: translateY(-20px);}
+    60% {transform: translateY(-10px);}
+}
+
+/* Confirmation Text */
+.confirmation-container h1 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.confirmation-text {
+    color: var(--dark);
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+/* Confirmation Details */
+.confirmation-details {
+    background: var(--light);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 2rem 0;
+    text-align: left;
+}
+
+.detail-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 1rem;
+}
+
+.detail-item:last-child {
+    margin-bottom: 0;
+}
+
+.detail-item i {
+    color: var(--primary);
+    font-size: 1.2rem;
+}
+
+.detail-item span {
+    color: var(--dark);
+}
+
+/* Action Buttons */
+.confirmation-actions {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.action-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s;
+    min-width: 200px;
+}
+
+.action-button.primary {
+    background: var(--primary);
+    color: white;
+    border: 2px solid var(--primary);
+}
+
+.action-button.primary:hover {
+    background: #0052a3;
+    border-color: #0052a3;
+}
+
+.action-button.secondary {
+    background: transparent;
+    color: var(--primary);
+    border: 2px solid var(--primary);
+}
+
+.action-button.secondary:hover {
+    background: rgba(0, 102, 204, 0.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .confirmation-container {
+        padding: 2rem 1.5rem;
+    }
+    
+    .confirmation-actions {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .action-button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .confirmation-container {
+        padding: 1.5rem 1rem;
+    }
+    
+    .confirmation-icon {
+        font-size: 3rem;
+    }
+    
+    .confirmation-container h1 {
+        font-size: 1.5rem;
+    }
+    
+    .confirmation-text {
+        font-size: 1rem;
+    }
+}
+
+.action-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s;
+    min-width: 200px;
+}
+
+.action-button.primary {
+    background: var(--primary);
+    color: white;
+    border: 2px solid var(--primary);
+}
+
+.action-button.primary:hover {
+    background: #0052a3;
+    border-color: #0052a3;
+}
+
+.action-button.secondary {
+    background: transparent;
+    color: var(--primary);
+    border: 2px solid var(--primary);
+}
+
+.action-button.secondary:hover {
+    background: rgba(0, 102, 204, 0.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .confirmation-container {
+        padding: 2rem 1.5rem;
+    }
+    
+    .confirmation-actions {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .action-button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .confirmation-container {
+        padding: 1.5rem 1rem;
+    }
+    
+    .confirmation-icon {
+        font-size: 3rem;
+    }
+    
+    .confirmation-container h1 {
+        font-size: 1.5rem;
+    }
+    
+    .confirmation-text {
+        font-size: 1rem;
+    }
+}
