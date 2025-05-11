@@ -1,0 +1,162 @@
+/* Car Detail Page Styling */
+
+/* Container for the entire car detail section */
+.car-detail.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Car hero section with image */
+.car-hero {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+/* Car image styling */
+.car-hero img {
+  max-width: 70%; /* Make the image smaller */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Car badge styling */
+.car-badge {
+  position: absolute;
+  top: 20px;
+  right: 20%;
+  background-color: #f8d700;
+  color: #333;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+/* Car info section */
+.car-info {
+  width: 100%;
+  max-width: 800px;
+}
+
+/* Car title */
+.car-info h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #333;
+  text-align: center;
+}
+
+/* Price styling */
+.price {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.price span {
+  font-size: 1rem;
+  color: #7f8c8d;
+}
+
+/* Specifications and features sections */
+.specs, .features {
+  margin-bottom: 30px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.specs h2, .features h2 {
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.specs ul, .features ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.specs li, .features li {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.specs .icon {
+  margin-right: 10px;
+  font-style: normal;
+}
+
+/* Booking form styling */
+.booking-form {
+  background-color: #f9f9f9;
+  padding: 25px;
+  border-radius: 8px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.booking-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.book-btn {
+  background-color: #2c3e50;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+.book-btn:hover {
+  background-color: #1a252f;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .car-hero img {
+    max-width: 90%;
+  }
+  
+  .car-badge {
+    right: 10%;
+  }
+}

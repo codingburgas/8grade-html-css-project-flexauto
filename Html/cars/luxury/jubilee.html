@@ -1,118 +1,99 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <header><meta charset="UTF-8">
-  <title>Enus Jubilee | Flex-Auto</title>
-  <link rel="stylesheet" href="../Styles/indexcss.css">
-  <link rel="stylesheet" href="../Styles/luxury-car.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enus Jubilee | Flex-Auto</title>
+    <link rel="stylesheet" href="../../../Styles/indexcss.css">
+    <link rel="stylesheet" href="../../../Styles/carsrenting.css">
+    <link rel="icon" type="image/png" href="../images/9026B910-0E90-4327-85D9-7EA27659B853 (1).png">
 </head>
-</header>
 <body>
-  
-    <main>
-        <section class="fleet-section">
-            <div class="fleet-top">
-                <h2>Our Fleet</h2>
-                <div class="category">
-                  <a href="cars.html"><button class="active-button">All</button></a>
-                  <a href="musclecars.html"><button>Muscle</button></a>
-                  <a href="luxury.html"><button>Luxury</button></a>
-                  <a href="sport.html"><button>Sport</button></a>
-                </div>
-              </div>
-          
-            <div class="fleet-div">
-              <div class="car-card">
-                <img src="../media/rollsroyce4k.jpg" alt="Bravado Gauntlet" />
-                <h3>Bravado Gauntlet</h3>
-                <p>8 May – 11 May | 3 days</p>
-                <div class="car-details">
-                  <span>Type: RWD</span>
-                  <span>Seats: 2</span>
-                  <span>Bags: 1</span>
-                </div>
-                <button class="bookNow-button">Book Now – $99/day</button>
-              </div>
+    <header>
+    <div class="logo-container">
+      <a href="index.html">
+        <img src="../../../images/9026B910-0E90-4327-85D9-7EA27659B853 (1).png" alt="Flex-Auto Logo" class="logo">
+      </a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="../../categories.html">Categories</a></li>
+        <li><a href="../../team.html">Our Team</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="../../loginpage.html">Sign in</a></li>
+        
+        <li><a href="../../Support.html">Support</a></li>
+      </ul>
+    </nav>
+  </header>
 
-              <div class="car-card">
-                <img src="../media/222.jpg" alt="Solin" />
-                <h3>Solin</h3>
-                <p>8 May – 11 May | 3 days</p>
-                <div class="car-details">
-                  <span>Type: RWD</span>
-                  <span>Seats: 2</span>
-                  <span>Bags: 1</span>
-                </div>
-                <button class="bookNow-button">Book Now – $95/day</button>
-              </div>
+    <main class="car-detail container">
+        
+        
+        <section class="car-hero">
+            <img src="../../../images/Luxury/Jubilee-GTAOe-FrontQuarter.webp" alt="Enus Jubilee Luxury Car">
+            <div class="car-badge">Luxury</div>
+        </section>
+      <br>
+        
+        
 
-              <div class="car-card">
-                <img src="../media/car2.png" alt="Nexora" />
-                <h3>Nexora</h3>
-                <p>8 May – 11 May | 3 days</p>
-                <div class="car-details">
-                  <span>Type: RWD</span>
-                  <span>Seats: 4</span>
-                  <span>Bags: 2</span>
-                </div>
-                <button class="bookNow-button">Book Now – $100/day</button>
-              </div>
+        <section class="car-info">
+            <h1>Enus Jubilee</h1>
+            <div class="price">$4,500 <span>/day</span></div>
+            
+            <div class="specs">
+                <h2>Specifications</h2>
+                <ul>
+                    <li><i class="icon">🚀</i> Top Speed: 210 km/h</li>
+                    <li><i class="icon">💺</i> Seats: 4</li>
+                    <li><i class="icon">⏱️</i> 0-100 km/h: 4.8s</li>
+                    <li><i class="icon">🛡️</i> Armor: Level 4</li>
+                </ul>
+            </div>
 
-              <div class="car-card">
-                <img src="../media/9.jpg" alt="Ravelo" />
-                <h3>Ravelo</h3>
-                <p>8 May – 11 May | 3 days</p>
-                <div class="car-details">
-                  <span>Type: RWD</span>
-                  <span>Seats: 4</span>
-                  <span>Bags: 2</span>
-                </div>
-                <button class="bookNow-button">Book Now – $101/day</button>
-              </div>
+            <div class="features">
+                <h2>Features</h2>
+                <ul>
+                    <li>Bulletproof windows</li>
+                    <li>Executive lounge seating</li>
+                    <li>Imani Tech security package</li>
+                    <li>1600W premium sound system</li>
+                </ul>
+            </div>
 
-              <div class="car-card">
-                <img src="../media/car3.jpg" alt="Arvia" />
-                <h3>Arvia</h3>
-                <p>8 May – 11 May | 3 days</p>
-                <div class="car-details">
-                  <span>Type: RWD</span>
-                  <span>Seats: 4</span>
-                  <span>Bags: 1</span>
+            <form class="booking-form">
+                <h2>Book This Vehicle</h2>
+                <div class="form-group">
+                    <label for="pickup-date">Pickup Date</label>
+                    <input type="date" id="pickup-date" required>
                 </div>
-                <button class="bookNow-button">Book Now – $89/day</button>
-              </div>
-
-              <div class="car-card">
-                <img src="../media/Travia.jpg" alt="Travia" />
-                <h3>Travia</h3>
-                <p>8 May – 11 May | 3 days</p>
-                <div class="car-details">
-                  <span>Type: RWD</span>
-                  <span>Seats: 4</span>
-                  <span>Bags: 1</span>
+                <div class="form-group">
+                    <label for="return-date">Return Date</label>
+                    <input type="date" id="return-date" required>
                 </div>
-                <button class="bookNow-button">Book Now – $97/day</button>
-              </div>
-          
-          </section>
-          
+                <button type="submit" class="book-btn" onclick="window.location.href='../../payments.html'">Reserve Now</button>
+            </form>
+        </section>
+        
+      
     </main>
 
-  <footer>
+    <footer>
     <section id="contact" class="section">
-      <h2>Contact Us</h2>
-      <p>Email: <a href="mailto:contact@flexauto.com">contact@flexauto.com</a></p> 
-      <p>Phone: +1 234 567 000</p>
-    </section>
-    <section id="Support" class="section">
-      <h4>If you have any trouble, go to <a href="../Html/Support.html">Support</a></h4>
-    </section>  
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:contact@flexauto.com">contact@flexauto.com</a></p> 
+    <p>Phone: +1 234 567 000</p>
+  </section> <br>
+  <section id="Support" class="section">
+  <h4>If you have any trouble, go to <a href="../Html/Support.html">Support</a></h4>
+  </section>  
+   <br> 
     <h2>Legal</h2>
-    <a href="../Html/privacy.html">Privacy Policy</a>
-    <p>&copy; 2025 Flex-Auto</p>  
-  </footer>
-
-  
+    <a href="../Html/privacy.html"> privacy-policy</a>
+    
+<p>&copy; 2025 Flex-Auto</p>  
+</footer>
 </body>
 </html>
