@@ -27,3 +27,14 @@
 <img src="https://github.com/codingburgas/8grade-html-css-project-flexauto/blob/main/images/css-3-logo.png" width="100">
 <img src="https://github.com/codingburgas/8grade-html-css-project-flexauto/blob/main/images/Canva-Emblem.png" width="100">
 <img src="https://github.com/codingburgas/8grade-html-css-project-flexauto/blob/main/images/html-logo.png" width="100">
+<img src="https://1000logos.net/wp-content/uploads/2020/08/Git-Emblem.jpg" width="100">
+<img src="https://th.bing.com/th/id/OIP.fqZ9-PPqcG_cm0k3JfoINQHaEK?cb=iwp2&rs=1&pid=ImgDetMain" width="100">
+
+
+## 🙍‍♂️Our Team
+-**Nikolay Ivanov** ▫ Scrum Trainer
+-**Nikola Dimitrov** ▫ HTML Developer
+-**Filip Filipov** ▫ CSS Developer
+-**Yanko Yanev** ▫ Designer
+
+
