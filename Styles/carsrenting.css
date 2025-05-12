@@ -1,6 +1,6 @@
-/* Car Detail Page Styling */
+/* Страница за детайлите за css на колите по скоро само за шаблон използван ползван на всички коли */
 
-/* Container for the entire car detail section */
+/* контейнер за детайлите на колите */
 .car-detail.container {
   max-width: 1200px;
   margin: 0 auto;
@@ -10,7 +10,7 @@
   align-items: center;
 }
 
-/* Car hero section with image */
+/* контейнера с изображението на колата */
 .car-hero {
   width: 100%;
   display: flex;
@@ -19,9 +19,9 @@
   margin-bottom: 30px;
 }
 
-/* Car image styling */
+/* стайлът за колата и бокса към него */
 .car-hero img {
-  max-width: 70%; /* Make the image smaller */
+  max-width: 70%; 
   height: auto;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -29,13 +29,13 @@
 
 
 
-/* Car info section */
+/* за информацията за колата */
 .car-info {
   width: 100%;
   max-width: 800px;
 }
 
-/* Car title */
+/* за заглавието на колата */
 .car-info h1 {
   font-size: 2.5rem;
   margin-bottom: 10px;
@@ -43,7 +43,7 @@
   text-align: center;
 }
 
-/* Price styling */
+/* прайс тага на колата по скоро цената му */
 .price {
   font-size: 1.8rem;
   font-weight: bold;
@@ -51,44 +51,44 @@
   margin-bottom: 20px;
   text-align: center;
 }
-
+/**/
 .price span {
   font-size: 1rem;
   color: #7f8c8d;
 }
 
-/* Specifications and features sections */
+/*за самите предимства на колата и различните детайли като скорост, колко седалки има и т.н.*/
 .specs, .features {
   margin-bottom: 30px;
   background-color: #f9f9f9;
   padding: 20px;
   border-radius: 8px;
 }
-
+/*това е за h2 версията*/
 .specs h2, .features h2 {
   border-bottom: 2px solid #e0e0e0;
   padding-bottom: 10px;
   margin-bottom: 20px;
   color: #2c3e50;
 }
-
+/*това е за ънордердлист селекцията*/
 .specs ul, .features ul {
   list-style-type: none;
   padding: 0;
 }
-
+/*за листване на самите предимства и детайли(listed items)*/
 .specs li, .features li {
   margin-bottom: 15px;
   display: flex;
   align-items: center;
 }
-
+/*за иконите на емоджитата на различните детайли*/
 .specs .icon {
   margin-right: 10px;
   font-style: normal;
 }
 
-/* Booking form styling */
+/* за резервирането контейнер как да изглежда самият бокс */
 .booking-form {
   background-color: #f9f9f9;
   padding: 25px;
@@ -96,7 +96,7 @@
   margin-top: 20px;
   width: 100%;
 }
-
+/*за h2 форма*/
 .booking-form h2 {
   text-align: center;
   margin-bottom: 20px;
@@ -121,7 +121,7 @@
   border-radius: 4px;
   font-size: 16px;
 }
-
+/*бутона за резервиране*/
 .book-btn {
   background-color: #2c3e50;
   color: white;
@@ -138,7 +138,7 @@
   background-color: #1a252f;
 }
 
-/* Responsive design adjustments */
+
 @media (max-width: 768px) {
   .car-hero img {
     max-width: 90%;

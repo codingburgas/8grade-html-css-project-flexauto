@@ -1,4 +1,4 @@
-
+/*Съобщение за съпорта че сме го получили css*/
 
 
 .confirmation-main {
@@ -19,7 +19,7 @@
     text-align: center;
 }
 
-/* Confirmation Icon */
+
 .confirmation-icon {
     font-size: 4rem;
     color: #2ecc71;
@@ -33,7 +33,7 @@
     60% {transform: translateY(-10px);}
 }
 
-/* Confirmation Text */
+
 .confirmation-container h1 {
     color: var(--primary);
     margin-bottom: 1rem;
@@ -47,7 +47,7 @@
     font-size: 1.1rem;
 }
 
-/* Confirmation Details */
+
 .confirmation-details {
     background: var(--light);
     border-radius: 8px;
@@ -76,7 +76,7 @@
     color: var(--dark);
 }
 
-/* Action Buttons */
+
 .confirmation-actions {
     display: flex;
     justify-content: center;
@@ -120,7 +120,7 @@
     background: rgba(0, 102, 204, 0.1);
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
     .confirmation-container {
         padding: 2rem 1.5rem;

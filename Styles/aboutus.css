@@ -1,0 +1,68 @@
+
+  
+  
+  /*този css е копиран от privacy-policy css защото е почти еднакъв с този който ни трябва*/
+  
+html, body {
+  height: 100%;
+  margin: 0;
+}
+/*относно за бодито*/
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+}
+/*специално за секцията мейн*/
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: var(--white);
+  border-radius: 8px;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+  flex: 1; 
+}
+/*един от таговете който прави отстояние колко празно място да има*/
+.privacy-policy {
+  padding: 2rem;
+}
+/*специално за h1 колко да е голям шрифта, цвета, центриране, и отстояние за редовете текст*/
+.privacy-policy h1 {
+  font-size: 2.2rem;
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+/*фуутъра с черен бакграунд цвят, цвета на шрифта на фуутъра, центриране на текст, отстояние и размер по ширина*/
+footer {
+  background: var(--dark);
+  color: var(--white);
+  text-align: center;
+  padding: 2rem;
+  width: 100%;
+  
+}
+/*това е за линкването към други сайтове в случая цвета както изглеждат е жълт*/
+footer a {
+  color: var(--secondary);
+}
+/*специален таг за телефонна версия за кода който прави така че да изглежда добре и за телефонен вариант*/
+@media (max-width: 768px) {
+  main {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+  
+  .privacy-policy {
+    padding: 1rem;
+  }
+  
+  .privacy-policy h1 {
+    font-size: 1.8rem;
+  }
+  
+  .privacy-policy h2 {
+    font-size: 1.3rem;
+  }
+}

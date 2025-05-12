@@ -1,4 +1,4 @@
-/* payment.css - Secure Payment Page Styles */
+/* Сигурен сайт за плащане в сайта css */
 
 .payment-main {
     display: flex;
@@ -164,7 +164,7 @@ input {
     justify-content: center;
     gap: 8px;
 }
-/*For mobile devices*/
+/*за мобилни устройства*/
 @media (max-width: 768px) {
     .payment-content {
         grid-template-columns: 1fr;
@@ -175,7 +175,7 @@ input {
         font-size: 1.5rem;
     }
 }
-/* Payment Help Box Styles */
+
 .payment-help-box {
     display: flex;
     justify-content: center;

@@ -1,6 +1,6 @@
 
 
-/* Team Section Styles */
+/* дефинира CSS променливи ползвани в <html> часта, главно за различни цветове*/
 :root {
   --primary: #0066cc;
   --secondary: #ffcc00;
@@ -9,21 +9,21 @@
   --white: #fff;
   --gray: #f5f5f5;
 }
-
+/*универсалният ни селектор*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Segoe UI', Roboto, sans-serif;
 }
-
+/*Бодито на сайта*/
 body {
   position: relative;
   min-height: 100vh;
   color: var(--dark);
   line-height: 1.6;
 }
-
+/*Bacground-overlay*/
 .background-overlay {
   position: fixed;
   top: 0;
@@ -33,7 +33,7 @@ body {
   background: url('https://estavisa.com.ar/wp-content/uploads/2019/12/road-trip-turismo.jpg') center/cover no-repeat;
   z-index: -1;
 }
-
+/*специален таг за затъмняване*/
 .dark-overlay {
   position: absolute;
   top: 0;
@@ -42,7 +42,7 @@ body {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.4);
 }
-
+/*как изглежда хедъра ни*/
 header {
   background: rgba(255, 255, 255, 0.9);
   padding: 1rem 2rem;
@@ -51,17 +51,17 @@ header {
   align-items: center;
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
-
+/*ресайзване(размер) на логото до 60 пиксела*/
 .logo {
   height: 60px;
 }
-
+/*Използвано за ънордеред лист за различните тагове за различните страници на главната страница, включва колко им е разстоянието едно от друго*/
 nav ul {
   display: flex;
   list-style: none;
   gap: 2rem;
 }
-
+/*това е специално за <a href=""> в хедъра по скоро в навигацията*/
 nav a {
   color: var(--dark);
   text-decoration: none;
