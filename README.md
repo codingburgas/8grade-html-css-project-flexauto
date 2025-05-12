@@ -32,9 +32,9 @@
 
 
 ## 🙍‍♂️Our Team
--**Nikolay Ivanov** ▫ Scrum Trainer
--**Nikola Dimitrov** ▫ HTML Developer
--**Filip Filipov** ▫ CSS Developer
--**Yanko Yanev** ▫ Designer
+- **Nikolay Ivanov** ▫ Scrum Trainer
+- **Nikola Dimitrov** ▫ HTML Developer
+- **Filip Filipov** ▫ CSS Developer
+- **Yanko Yanev** ▫ Designer
 
 
